@@ -9,96 +9,114 @@
 </head>
 <body>
     <header>
-        <div class="center">
-            <h2>Web Developer</h2>
-        </div>
         <nav>
-        <ul class="navLink">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-        </ul>
+            <h2>Web Developer</h2>
+            <ul class="navLink">
+                <li><a data-page="home" href="#hm">Home</a></li>
+                <li><a data-page="education" href="#edu">Education</a></li>
+                <li><a data-page="skills" href="#sk">Skills</a></li>
+                <li><a data-page="projects" href="#proj">Projects</a></li>
+                <li><a href="File/Nirmalkumar_Rodrigues.pdf">Resume</a></li>
+                <div class="bubble"></div>
+            </ul>
         </nav>
-        <div class="buttonHead"><button class="navContact">Contact Me</button></div>
     </header>
 
     <div class="mainPage">
-        <div class="container1">
-            <div class="name">
-                <h1>Hello Guys!</h1>
-                <h1>I'm Nirmalkumar Rodrigues</h1>
-            </div>
-            <div class="dot">
-                <hr class="dotted">
-            </div>
-            <hr class="verticleLine" width="1" size="100">
-
-        </div>
-
-        <div class="container2">
-            <h2 class="main">Education</h2>
-            <div class="college">
-                <h3>East Point College of Engineering and Technology</h3>
-                <p>Bangalore - 560049</p>
-                <p>Bachelor of Engineering in Information Science and Engineering</p>
-                <p>2017-2021</p>
-            </div>
-            <div class="pu">
-                <h3>M.E.S. Chaitanya PU College</h3>
-                <p>Sirsi - 581403</p>
-                <p>Senior Secondary (PCMCs)</p>
-                <p>2014-2017</p>
-            </div>
-            <div class="highSchool">
-                <h3>Holy Rosary High School</h3>
-                <p>Yellapur - 581359</p>
-                <p>Secondary (X)</p>
-                <p>2011-2014</p>
-            </div>
-            <div class="dot">
-                <hr class="dottedLeft">
-            </div>
-            <hr class="verticleLine" width="1" size="100">
-        </div>
-        <div class="container3">
-            <h2 class="main">Skills</h2>
-            <div class="skill">
-                <p>Java</p>
-                <p>Cloud Computing</p>
-                <p>Web Development</p>
-                <p>C++</p>
-            </div>  
-        </div>
-        <div class="container4">
-            <h2 class="main">Projects</h2>
-            <div class="box-holder">
-                <div class="box with-linear-gradient">
-                    <h3>nkrodrigues.tech</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p>Repellat incidunt laboriosam cum omnis,</p>
-                </div>
-                <div class="box with-linear-gradient">
-                    <h3>REarth</h3>
-                    <p>REarth is an Android application built using JavaScript, HTML/CSS in a 48hrs Hackathon.</p>
-                    <p>Application delivers eco-friendly solutions for everyday problems to the user, through simple UI</p>
-                </div>
-                <div class="box with-linear-gradient">
-                    <h3>Valheim Server</h3>
-                    <p>It’s a private video game server built using Ubuntu.</p>
-                    <p>The server is running on a VM which is hosted on Digital Ocean.</p>
-                    <p>As a result, the server saves computing resources and maximizes performance of the user’s system</p>
+        <section data-index="0" id="hm" class="home">
+            <div class="container1">
+                <div class="name">
+                    <h1>Hello Guys!</h1>
+                    <h1>I'm Nirmalkumar Rodrigues</h1>
                 </div>
             </div>
-        </div>
+        </section>
+        <section data-index="1" id="edu" class="education">
+            <div class="container2">
+                <h2 class="main">Education</h2>
+                <div class="college">
+                    <h3>East Point College of Engineering and Technology</h3>
+                    <p>Bangalore - 560049</p>
+                    <p>Bachelor of Engineering in Information Science and Engineering</p>
+                    <p>2017-2021</p>
+                </div>
+                <div class="pu">
+                    <h3>M.E.S. Chaitanya PU College</h3>
+                    <p>Sirsi - 581403</p>
+                    <p>Senior Secondary (PCMCs)</p>
+                    <p>2014-2017</p>
+                </div>
+                <div class="highSchool">
+                    <h3>Holy Rosary High School</h3>
+                    <p>Yellapur - 581359</p>
+                    <p>Secondary (X)</p>
+                    <p>2011-2014</p>
+                </div>
+            </div>
+        </section>
+        <section data-index="2" id="sk" class="skills">
+            <div class="container3">
+                <h2 class="main">Skills</h2>
+                <div class="skill">
+                    <div class="image">
+                        <img src="images/c.png" alt="c++">
+                        <img src="images/html.png" alt="html">
+                        <img src="images/javascript.png" alt="JavaScript">
+                    </div>
+                    <div class="skillset">
+                        <p>C++</p>
+                        <p style="padding-left: 20px;">HTML/CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/Java.png" alt="Java">
+                        <img src="images/git.png" alt="git">
+                        <img src="images/cc.png" alt="Cloud computing">
+                    </div>
+                    <div class="skillset2">
+                        <p>Java</p>
+                        <p style="text-indent: 40px;">Git</p>
+                        <p>Cloud Computing</p>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+        <section data-index="3" id="proj" class="projects">
+            <div class="container4">
+                <h2 class="main">Projects</h2><br>
+                <div class="box-holder">
+                    <div class="box with-linear-gradient">
+                        <h3>nkrodrigues.tech</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Repellat incidunt laboriosam cum omnis,</p>
+                    </div>
+                    <div class="box with-linear-gradient">
+                        <h3>REarth</h3>
+                        <p>REarth is an Android application built using JavaScript, HTML/CSS in a 48hrs Hackathon.</p>
+                        <p>Application delivers eco-friendly solutions for everyday problems to the user, through simple UI</p>
+                    </div>
+                    <div class="box with-linear-gradient">
+                        <h3>Valheim Server</h3>
+                        <p>It’s a private video game server built using Ubuntu.</p>
+                        <p>The server is running on a VM which is hosted on Digital Ocean.</p>
+                        <p>As a result, the server saves computing resources and maximizes performance of the user’s system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     
     <footer>
-        <div>Contact Me</div>
-        <p>nkrodrigues98@gmail.com</p>
-        <p>+91 - 7337630210</p>
-        <p><img src="/images/github.png" alt=""></p>
-        <p><img src="/images/linkedin.png" alt=""></p>
+        <h2>Contact Me</h2>
+        <div class="foot">
+            <p>nkrodrigues98@gmail.com</p>
+            <p>+91 - 7337630210</p>
+            <div class="footer-icon">
+                <p><a href="https://github.com/Nk-rodrigues" target="_blank"><img src="/images/github.png" alt="Github"></a></p>
+                <p><a href="https://www.linkedin.com/in/nirmalkumar-rodrigues-722781188/" target="_blank"><img src="/images/linkedin.png" alt="linkedin"></a></p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="/js/app.js"></script>
